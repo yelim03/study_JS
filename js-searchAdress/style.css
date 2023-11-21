@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+button {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: #cfcfcf;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  background: #333;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 30px;
+  box-shadow: black 0 0 5px;
+}
+
+header #search-word-input {
+  width: 100px;
+  height: 30px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#prefecture-list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 72px;
+}
+
+#prefecture-list button.hide {
+  display: none;
+}
